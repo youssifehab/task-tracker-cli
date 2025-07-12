@@ -31,12 +31,14 @@ npm install
 npm run build
 
 # Link globally (to use `task-cli` from anywhere)
-npm link
+npm
+```
 
 ---
 
 ## 🧪 Usage
 
+```bash
 # Add a new task
 task-cli add "Buy groceries"
 
@@ -46,11 +48,17 @@ task-cli update 1 "Buy groceries and cook dinner"
 # Delete a task
 task-cli delete 1
 
+# Delete all tasks
+task-cli delete-all
+
 # Mark a task as in-progress
 task-cli mark-in-progress 2
 
 # Mark a task as done
 task-cli mark-done 2
+
+# Mark a task as todo
+task-cli mark-todo 2
 
 # List all tasks
 task-cli list
