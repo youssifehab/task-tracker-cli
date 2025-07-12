@@ -31,7 +31,7 @@ npm install
 npm run build
 
 # Link globally (to use `task-cli` from anywhere)
-npm
+npm link
 ```
 
 ---
