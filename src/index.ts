@@ -31,6 +31,14 @@ async function run() {
       console.log(await task.deleteById(parseInt(args[0])));
       break;
 
+    case "delete-all":
+      if (args.length !== 0) {
+        console.log("Usage: task-cli delete-all");
+        break;
+      }
+      console.log(await task.deleteAll());
+      break;
+
     case "mark-in-progress":
       if (args.length !== 1) {
         console.log("Usage: task-cli mark-in-progress <id>");
@@ -45,6 +53,14 @@ async function run() {
         break;
       }
       console.log(await task.markDone(parseInt(args[0])));
+      break;
+
+    case "mark-todo":
+      if (args.length !== 1) {
+        console.log("Usage: task-cli mark-todo <id>");
+        break;
+      }
+      console.log(await task.markTodo(parseInt(args[0])));
       break;
 
     case "list":
@@ -66,7 +82,7 @@ async function run() {
     default:
       console.log("Unknown command.");
       console.log(
-        `Available commands: add, update, delete, mark-in-progress, mark-done, list`
+        `Available commands: add, update, delete, mark-in-progress, mark-done, mark-todo, list`
       );
   }
 }

@@ -102,6 +102,15 @@ export class Task {
     }
   }
 
+  public async deleteAll() {
+    try {
+      await fs.promises.writeFile(this.filePath, [], "utf8");
+      return "All tasks deleted successfully ✅";
+    } catch (err) {
+      console.log("delete all error: ", err);
+    }
+  }
+
   public async markInProgress(id: number) {
     try {
       let tasksArr: taskData[] = [];
