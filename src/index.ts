@@ -82,7 +82,7 @@ async function run() {
     default:
       console.log("Unknown command.");
       console.log(
-        `Available commands: add, update, delete, mark-in-progress, mark-done, mark-todo, list`
+        `Available commands: add, update, delete, delete-all, mark-in-progress, mark-done, mark-todo, list`
       );
   }
 }
