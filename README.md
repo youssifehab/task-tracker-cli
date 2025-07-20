@@ -1,8 +1,8 @@
 # 🧩 Task Tracker CLI
 
-Project URL: https://github.com/youssifehab/task-tracker-cli
-
 A simple command-line tool to manage your tasks. Supports adding, updating, deleting, marking status, and listing tasks — all from the terminal.
+
+For more details: https://roadmap.sh/projects/task-tracker
 
 ---
 
